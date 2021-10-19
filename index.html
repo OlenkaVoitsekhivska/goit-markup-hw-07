@@ -336,13 +336,13 @@
         <section class="address">
       <a href="/" class="logo-footer"><span class="web">Web</span>Studio</a>
       <address class="footer-address">
-        <p class="physical-address">г. Киев, пр-т Леси Украинки, 26</p>
-        <a href="mailto:info@example.com" class="mail">info@example.com</a>
-        <a href="tel:+380991111111" class="telnumber">+38 099 111 11 11</a>
+        <p class="footer-address__physical-address">г. Киев, пр-т Леси Украинки, 26</p>
+        <a href="mailto:info@example.com" class="footer-address__mail">info@example.com</a>
+        <a href="tel:+380991111111" class="footer-address__telnumber">+38 099 111 11 11</a>
       </address>
     </section>
       
-      <section class="socials-footer">
+      <div class="footer-socials">
   <p class="socials-footer__text">присоединяйтесь</p>
         <ul class="socials-list footer">
           <li class="socials-footer__item">
@@ -365,14 +365,14 @@
             </svg></a>
           </li>
         </ul>
-      </section>
+      </div>
 
         <!-- ПОДПИСКА НА РАССЫЛКУ-->
         <form action="" autocomplete="off" class="subscribe">
           <b>Подпишитесь на рассылку</b>
-          <div class="subscribe-group">
-            <label for=""><input type="email" placeholder="E-mail"></label>
-            <button type="submit" class="subscribe-btn">Подписаться <svg width="24" height="24" class="icon-send">
+          <div class="subscribe__group">
+            <label for="email"><input type="email" name="email" id="email" placeholder="E-mail"></label>
+            <button type="submit" class="subscribe__btn">Подписаться <svg width="24" height="24" class="icon-send">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg></button>
           </div>
