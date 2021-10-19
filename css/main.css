@@ -992,6 +992,11 @@ label {
   margin-left: 10px;
 }
 
+.projects-filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,13 +1010,8 @@ label {
   list-style-type: none;
 }
 
-.btns li + li {
+.btns__item + .btns__item {
   margin-left: 8px;
-}
-
-.projects-filter {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .btn {
@@ -1025,18 +1025,13 @@ label {
   border-radius: 4px;
   border-color: transparent;
   color: #212121;
-  -webkit-transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, box-shadow;
-  transition-property: background-color, color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover, .btn:focus {
   background-color: #2196f3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1049,13 +1044,9 @@ label {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style-type: none;
 }
 
-.projects-list li {
+.projects-list__item {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
@@ -1069,24 +1060,25 @@ label {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list > li:hover {
+.projects-list__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-list > li:nth-child(3n) {
+.projects-list__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.projects-list > li:nth-last-child(-n + 3) {
+.projects-list__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.projects-link {
-  text-decoration: none;
+.project {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
-.projects-title {
+.project .projects-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1094,16 +1086,11 @@ label {
   color: #212121;
 }
 
-.projects-type {
+.project .projects-type {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
-}
-
-.project {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
 }
 
 .projects-wrapper {
@@ -1124,14 +1111,10 @@ label {
   font-size: 18px;
   line-height: 1.56;
   padding: 63px 24px;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-wrapper:hover .project-overlay {
